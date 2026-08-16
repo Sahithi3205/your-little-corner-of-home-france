@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>You Matter</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+
+        .reminder-box {
+
+            background: rgba(255, 255, 255, 0.92);
+
+            max-width: 650px;
+
+            margin: 40px auto;
+
+            padding: 45px 30px;
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 10px 30px rgba(49, 91, 140, 0.12);
+
+        }
+
+        #message {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 28px;
+
+            line-height: 1.7;
+
+            color: #183b68;
+
+        }
+
+        .small-message {
+
+            margin-top: 30px;
+
+            color: #65758a;
+
+            line-height: 1.7;
+
+        }
+
+        .back-home {
+
+            color: #3978c9;
+
+            text-decoration: none;
+
+            font-weight: 500;
+
+        }
+
+        .back-home:hover {
+
+            text-decoration: underline;
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<section class="landing">
+
+    <div class="glass">
+
+        <h1 class="title">
+            🩵 You Matter
+        </h1>
+
+        <p class="subtitle">
+            Just in case you needed the reminder today.
+        </p>
+
+
+        <div class="reminder-box">
+
+            <p id="message"></p>
+
+            <p class="small-message">
+
+                No matter where you are,
+                no matter how today went,
+                you're loved, you're missed,
+                and someone back home is always
+                rooting for you. 💙
+
+            </p>
+
+        </div>
+
+
+        <br>
+
+        <a
+            href="../index.html?dashboard=true"
+            class="back-home"
+        >
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+</section>
+
+
+<script>
+
+const messages = [
+
+    "You're doing better than you think. 💙",
+
+    "You don't have to have everything figured out today.",
+
+    "Take a deep breath. You're allowed to take things one day at a time.",
+
+    "You're stronger than you realise.",
+
+    "It's okay to miss home. Home misses you too. 🤍",
+
+    "You deserve to enjoy every little moment of this adventure.",
+
+    "One difficult day doesn't define your entire journey.",
+
+    "Don't forget to be proud of yourself.",
+
+    "You're allowed to slow down and rest.",
+
+    "You are loved more than you know. 🩵",
+
+    "Somewhere back home, someone is thinking about you.",
+
+    "You're making memories that you'll look back on someday and smile.",
+
+    "You can do this, Abhisha. 🇫🇷",
+
+    "Even on the days that don't go according to plan, you're still doing okay.",
+
+    "This is your year. Go make it yours. ✨"
+
+];
+
+
+const randomIndex =
+    Math.floor(Math.random() * messages.length);
+
+
+document.getElementById("message").innerHTML =
+    messages[randomIndex];
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Letter for Today</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+
+        .envelope {
+            font-size: 70px;
+            cursor: pointer;
+            margin: 35px auto;
+            transition: transform 0.3s ease;
+        }
+
+        .envelope:hover {
+            transform: scale(1.1);
+        }
+
+        .letter {
+            background: rgba(240, 247, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 700px;
+            margin: 30px auto;
+            line-height: 1.8;
+            color: #263b5a;
+            box-shadow: 0 10px 30px rgba(50, 90, 140, 0.12);
+        }
+
+        .letter h2 {
+            color: #183b68;
+            margin-bottom: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .back-home {
+            color: #3978c9;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 17px;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<section class="landing">
+
+    <div class="glass">
+
+        <h1 class="title">
+            💌 A Letter for Today
+        </h1>
+
+        <p class="subtitle">
+            A little note waiting just for you.
+        </p>
+
+
+        <!-- Click this envelope -->
+
+        <div id="envelope" class="envelope">
+            ✉️
+        </div>
+
+
+        <!-- Hidden until envelope is clicked -->
+
+        <div id="letter" class="letter hidden">
+
+            <h2>Today's Letter 💙</h2>
+
+            <p id="dailyMessage"></p>
+
+        </div>
+
+
+        <br><br>
+
+        <a
+            href="../index.html?dashboard=true"
+            class="back-home"
+        >
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+</section>
+
+
+<script src="../js/messages.js"></script>
+
+</body>
+
+</html>

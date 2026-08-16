@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>France Bucket List</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+
+        .bucket-intro {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+            color: #526b89;
+        }
+
+        .progress-text {
+            color: #526b89;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .progress {
+            height: 9px;
+            background: #e5eef8;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: #3978c9;
+            border-radius: 20px;
+            transition: width 0.4s ease;
+        }
+
+        .bucket-section {
+            background: rgba(255, 255, 255, 0.88);
+            border-radius: 20px;
+            padding: 22px;
+            margin-bottom: 18px;
+            text-align: left;
+            box-shadow: 0 7px 20px rgba(49, 91, 140, 0.08);
+        }
+
+        .bucket-section h2 {
+            color: #183b68;
+            font-family: 'Playfair Display', serif;
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        .bucket-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 2px;
+            cursor: pointer;
+        }
+
+        .bucket-item input {
+            width: 18px;
+            height: 18px;
+            accent-color: #3978c9;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .bucket-item span {
+            color: #526b89;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .bucket-item input:checked + span {
+            text-decoration: line-through;
+            opacity: 0.5;
+        }
+
+        .back-home {
+            color: #3978c9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 700px) {
+
+            .bucket-section {
+                padding: 18px;
+            }
+
+            .bucket-item span {
+                font-size: 14px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<section class="landing">
+
+<div class="glass">
+
+    <h1 class="title">
+        🗺️ France Bucket List
+    </h1>
+
+    <p class="bucket-intro">
+        One year. A whole country to explore.
+        Here are 50 little adventures to collect along the way. 💙
+    </p>
+
+
+    <p id="progressText" class="progress-text">
+        0 of 50 adventures collected
+    </p>
+
+    <div class="progress">
+        <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+
+    <!-- LYON -->
+
+    <div class="bucket-section">
+
+        <h2>🦁 Lyon</h2>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Wander through Vieux Lyon</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>See Lyon from Fourvière</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Walk through Parc de la Tête d'Or 🌳</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Explore the secret traboules</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Try a traditional Lyonnaise meal</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Walk along the Rhône at sunset 🌅</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>See Fête des Lumières ✨</span>
+        </label>
+
+    </div>
+
+
+    <!-- PARIS -->
+
+    <div class="bucket-section">
+
+        <h2>🗼 Paris</h2>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>See the Eiffel Tower</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>See the Eiffel Tower sparkle at night ✨</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Walk along the Seine</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Explore Montmartre</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>See Sacré-Cœur</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Visit the Louvre</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Have a café morning ☕</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Have a picnic in Paris</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Walk along the Champs-Élysées</span>
+        </label>
+
+    </div>
+
+
+    <!-- NICE -->
+
+    <div class="bucket-section">
+
+        <h2>🌊 Nice & Côte d'Azur</h2>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Walk the Promenade des Anglais</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Swim in the Mediterranean 🌊</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Explore Vieux Nice</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Visit Èze</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Watch a sunset by the sea</span>
+        </label>
+
+    </div>
+
+
+    <!-- ALSACE -->
+
+    <div class="bucket-section">
+
+        <h2>🥨 Strasbourg & Alsace</h2>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Explore Strasbourg</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Walk through Petite France</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Visit Colmar</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Try traditional Alsatian food</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Visit a Christmas market 🎄</span>
+        </label>
+
+    </div>
+
+
+    <!-- PROVENCE -->
+
+    <div class="bucket-section">
+
+        <h2>💜 Provence</h2>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>See the lavender fields</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Visit Aix-en-Provence</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Explore a little Provençal village</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Have a picnic surrounded by nature</span>
+        </label>
+
+    </div>
+
+
+    <!-- ALPS & ANNECY -->
+
+    <div class="bucket-section">
+
+        <h2>🏔️ Alps & Annecy</h2>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Visit Annecy</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Walk around Lake Annecy</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>See the French Alps</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Go on a mountain hike</span>
+        </label>
+
+    </div>
+
+
+    <!-- NORMANDY -->
+
+    <div class="bucket-section">
+
+        <h2>🏰 Normandy</h2>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Visit Mont-Saint-Michel</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Explore the Normandy coast</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Visit Giverny and Monet's gardens 🌷</span>
+        </label>
+
+    </div>
+
+
+    <!-- BORDEAUX & SOUTHWEST -->
+
+    <div class="bucket-section">
+
+        <h2>🍇 Bordeaux & Southwest</h2>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Explore Bordeaux</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Walk along the Garonne</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Visit the Dune du Pilat</span>
+        </label>
+
+    </div>
+
+
+    <!-- LITTLE ADVENTURES -->
+
+    <div class="bucket-section">
+
+        <h2>💙 Little Adventures</h2>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Take a spontaneous train trip 🚆</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Find your favourite bakery 🥐</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Find your favourite French café ☕</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Make a friend from another country</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Take a picture you'll keep forever 📸</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Have a completely spontaneous day</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Watch a beautiful French sunset 🌅</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Go somewhere you've never been before</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Have one completely unforgettable day 🤍</span>
+        </label>
+
+        <label class="bucket-item">
+            <input type="checkbox">
+            <span>Send a postcard home from France 💌</span>
+        </label>
+
+    </div>
+
+
+    <br>
+
+    <a
+        href="../index.html?dashboard=true"
+        class="back-home"
+    >
+        ← Back to Dashboard
+    </a>
+
+</div>
+
+</section>
+
+
+<script>
+
+const checkboxes =
+    document.querySelectorAll(".bucket-item input");
+
+const progressText =
+    document.getElementById("progressText");
+
+const progressBar =
+    document.getElementById("progressBar");
+
+
+function updateProgress() {
+
+    let completed = 0;
+
+    checkboxes.forEach((checkbox, index) => {
+
+        if (checkbox.checked) {
+            completed++;
+        }
+
+        localStorage.setItem(
+            "abhishaBucket" + index,
+            checkbox.checked
+        );
+
+    });
+
+    const total = checkboxes.length;
+
+    const percentage =
+        (completed / total) * 100;
+
+    progressText.innerHTML =
+        completed + " of " + total + " adventures collected";
+
+    progressBar.style.width =
+        percentage + "%";
+
+}
+
+
+checkboxes.forEach((checkbox, index) => {
+
+    const saved =
+        localStorage.getItem("abhishaBucket" + index);
+
+    if (saved === "true") {
+        checkbox.checked = true;
+    }
+
+    checkbox.addEventListener(
+        "change",
+        updateProgress
+    );
+
+});
+
+
+updateProgress();
+
+</script>
+
+</body>
+
+</html>
