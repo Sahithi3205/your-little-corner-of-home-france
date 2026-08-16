@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>While You Were Away</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+
+        .memory-intro {
+            max-width: 700px;
+            margin: 0 auto 35px;
+            line-height: 1.8;
+            color: #526b89;
+        }
+
+        .memory-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .memory {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 18px;
+
+            box-shadow:
+                0 10px 25px rgba(49, 91, 140, 0.12);
+
+            transition: 0.3s ease;
+        }
+
+        .memory:hover {
+            transform: translateY(-5px) rotate(1deg);
+        }
+
+        .memory:nth-child(even) {
+            transform: rotate(-1deg);
+        }
+
+        .memory:nth-child(even):hover {
+            transform: translateY(-5px) rotate(0deg);
+        }
+
+        .memory img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .memory p {
+            margin: 15px 5px 5px;
+            color: #526b89;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .back-home {
+            color: #3978c9;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 17px;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 700px) {
+
+            .memory-gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .memory img {
+                height: 280px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<section class="landing">
+
+    <div class="glass">
+
+        <h1 class="title">
+            📸 While You Were Away
+        </h1>
+
+        <p class="memory-intro">
+
+            A little collection of memories from home.
+            Whenever you miss us, come back here and remember
+            all the fun, chaos and moments we've shared. 💙
+
+        </p>
+
+
+        <div class="memory-gallery">
+
+
+            <div class="memory">
+
+                <img src="../images/a1.jpg" alt="Memory 1">
+
+                <p>
+                    One of my favourite memories with you. 💙
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <img src="../images/a2.jpg" alt="Memory 2">
+
+                <p>
+                    Still one of the funniest days. 😂
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <img src="../images/a3.jpg" alt="Memory 3">
+
+                <p>
+                    I hope this picture always makes you smile. 🩵
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <img src="../images/a4.jpg" alt="Memory 4">
+
+                <p>
+                    Just in case you forgot how chaotic we are together. 😂
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <img src="../images/a5.jpg" alt="Memory 5">
+
+                <p>
+                    A little piece of home to take with you. 🤍
+                </p>
+
+            </div>
+
+
+            <div class="memory">
+
+                <img src="../images/a6.jpg" alt="Memory 6">
+
+                <p>
+                    One more memory to keep forever. 💙
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <br><br>
+
+        <a
+            href="../index.html?dashboard=true"
+            class="back-home"
+        >
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
